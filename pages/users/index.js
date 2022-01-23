@@ -7,7 +7,7 @@ const UsersPage = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     publicAgent.get("/profiles/").then((res) => {
-      const data = res.data;
+      const data = res.data.results;
       setUsers(data);
     });
   }, []);
