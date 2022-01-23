@@ -10,7 +10,7 @@ const UserPage = () => {
     // code block
     if (query?.id != undefined) {
       publicAgent
-        .get(`http://localhost:8000/api/profiles/${query.id}/`)
+        .get(`/profiles/${query.id}/`)
         .then((res) => {
           const data = res.data;
           setUser(data);

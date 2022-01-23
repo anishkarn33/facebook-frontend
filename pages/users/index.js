@@ -6,7 +6,7 @@ import { publicAgent } from "../../lib/requests";
 const UsersPage = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    publicAgent.get("http://localhost:8000/api/profiles/").then((res) => {
+    publicAgent.get("/profiles/").then((res) => {
       const data = res.data;
       setUsers(data);
     });

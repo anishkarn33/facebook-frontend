@@ -6,7 +6,7 @@ import { publicAgent } from "../../lib/requests";
 const PostsPage = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    publicAgent.get("http://localhost:8000/api/newsfeeds/").then((res) => {
+    publicAgent.get("/newsfeeds/").then((res) => {
       const data = res.data.results;
       setPosts(data);
     });

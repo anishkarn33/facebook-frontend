@@ -10,7 +10,7 @@ const PostPage = () => {
     // code block
     if (query?.id != undefined) {
       publicAgent
-        .get(`http://localhost:8000/api/newsfeeds/${query.id}/`)
+        .get(`/newsfeeds/${query.id}/`)
         .then((res) => {
           const data = res.data;
           setPost(data);
