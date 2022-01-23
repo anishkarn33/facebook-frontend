@@ -24,7 +24,7 @@ const UsersPage = () => {
                 <Link href={`users/${user.id}`}>
                   <a href={`users/${user.id}`} className="card">
                     <h3>{idx + 1} &rarr;</h3>
-                    <p>{user.first_name} {user.last_name}</p>
+                    <p>{user.firstName} {user.lastName}</p>
                     <p>{user.email}</p>
                   </a>
                 </Link>
